@@ -1,6 +1,6 @@
 # Sumit Jaiswal Portfolio
 
-A modern, responsive single-page portfolio website for Sumit Jaiswal, focused on AI/ML, Generative AI, full-stack development, projects, skills, milestones, education, and contact details.
+A modern, responsive single-page portfolio for Sumit Jaiswal, highlighting Agentic AI, GenAI/RAG, machine learning, computer vision, backend engineering, and full-stack projects.
 
 ## Overview
 
@@ -50,7 +50,7 @@ Recommended options:
 
 For Netlify deployment:
 
-1. Upload or connect the `portfolio_v2` folder.
+1. Connect the `portfolio` repository and use the repository root as the publish directory.
 2. Keep the publish directory as the project root.
 3. Netlify will automatically detect the contact form because `index.html` includes `data-netlify="true"`.
 
