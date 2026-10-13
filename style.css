@@ -50,3 +50,21 @@
   .footer-socials{grid-template-columns:1fr 1fr}
   .footer-bottom{flex-direction:column;align-items:flex-start;gap:10px}
 }
+
+
+/* ===== Current AI portfolio refresh ===== */
+.project-art,.mini-art{position:relative;display:flex;align-items:flex-end;justify-content:flex-start;overflow:hidden;background:#0c1528;isolation:isolate}
+.project-art{aspect-ratio:16/9;padding:25px}
+.project-art:before,.mini-art:before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(circle at 20% 25%,rgba(56,189,248,.26),transparent 36%),radial-gradient(circle at 85% 80%,rgba(139,92,246,.28),transparent 38%),linear-gradient(135deg,#0c1528,#111a31 55%,#101126)}
+.project-art:after,.mini-art:after{content:"";position:absolute;inset:14px;border:1px solid rgba(148,163,184,.16);border-radius:14px;z-index:-1}
+.project-art .art-mark{position:absolute;top:24%;left:12%;font-size:clamp(64px,9vw,112px);line-height:1;color:rgba(226,242,255,.94);font-family:"Space Grotesk";text-shadow:0 0 45px rgba(56,189,248,.32)}
+.project-art .art-label{font-size:10px;letter-spacing:.2em;font-weight:800;color:#c9d8f1}
+.art-travel:before{background:radial-gradient(circle at 72% 30%,rgba(45,212,191,.26),transparent 35%),radial-gradient(circle at 18% 80%,rgba(59,130,246,.28),transparent 38%),linear-gradient(135deg,#0a1828,#102b3d 55%,#15142f)}
+.art-blog:before{background:radial-gradient(circle at 75% 20%,rgba(244,114,182,.22),transparent 35%),radial-gradient(circle at 20% 80%,rgba(139,92,246,.3),transparent 40%),linear-gradient(135deg,#17122b,#211936 55%,#10172b)}
+.art-docs:before{background:radial-gradient(circle at 70% 25%,rgba(96,165,250,.28),transparent 35%),radial-gradient(circle at 20% 80%,rgba(45,212,191,.2),transparent 38%),linear-gradient(135deg,#0b1d2a,#111d37 55%,#10172b)}
+.art-med:before{background:radial-gradient(circle at 70% 25%,rgba(52,211,153,.2),transparent 35%),radial-gradient(circle at 20% 80%,rgba(56,189,248,.22),transparent 38%),linear-gradient(135deg,#0b1b26,#102638 55%,#10172b)}
+.art-aira:before{background:radial-gradient(circle at 70% 25%,rgba(217,70,239,.25),transparent 35%),radial-gradient(circle at 20% 80%,rgba(59,130,246,.25),transparent 38%),linear-gradient(135deg,#10142b,#20153b 55%,#10172b)}
+.mini-art{aspect-ratio:16/10;padding:18px}
+.mini-art .art-mark{font-size:56px;color:rgba(226,242,255,.92);font-family:"Space Grotesk";text-shadow:0 0 30px rgba(56,189,248,.3)}
+.project-card .project-content p{min-height:0}
+@media(max-width:760px){.project-art{padding:18px}.project-art .art-mark{font-size:76px}.project-art:after,.mini-art:after{inset:9px}}
